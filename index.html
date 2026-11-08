@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarity - Digital Solutions Platform</title>
+    <!-- Google Fonts Sheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+    <!-- Favicon Sheet -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!-- Fontawesome Style Sheet -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Bootstrap Style Sheet -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <nav id="navbar-example2" class="navbar navbar-expand-lg mx-auto h-100">
+            <div class="container p-0 mx-auto h-100">
+                <div class="clarity d-flex align-items-center me-5">
+                    <div class="cube d-flex justify-content-center align-items-center flex-shrink-0">
+                        <i class="fa-solid fa-cube fa-lg text-white"></i>
+                    </div>
+                    <span>Clarity</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex align-items-center justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav nav-underline">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item me-3 dropdown">
+                            <a class="nav-link dropdown" href="#services-mega" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Services <i class="fa-solid fa-chevron-down ms-2"></i>
+                            </a>
+                            <div class="dropdown-menu shadow-lg dropdown-menu-end animate slideIn mt-2"
+                                aria-labelledby="navbarDropdown" id="services-mega">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6">
+                                        <h3 class="mb-4">DEVELOPMENTS</h3>
+                                        <div class="web-developments d-flex gap-2 mb-2">
+                                            <div class="code d-flex justify-content-center align-items-center">
+                                                <i class="fa-solid fa-code" id="code-icon"></i>
+                                            </div>
+                                            <div id="web-development">
+                                                <div class="fw-bold">Web Development</div>
+                                                <div class="desc text-secondary">Custom web applications & websites
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-apps d-flex gap-2 mb-2">
+                                            <div class="mobile d-flex justify-content-center align-items-center">
+                                                <i class="fa-solid fa-mobile" id="mobile-icon"></i>
+                                            </div>
+                                            <div id="mobile-app">
+                                                <div class="fw-bold">Mobile Apps</div>
+                                                <div class="desc text-secondary">iOS & Android native apps</div>
+                                            </div>
+                                        </div>
+                                        <div class="palette-designs d-flex gap-2 mb-2">
+                                            <div class="palette d-flex justify-content-center align-items-center">
+                                                <i class="fa-solid fa-palette" id="palette-icon"></i>
+                                            </div>
+                                            <div id="palette-design">
+                                                <div class="fw-bold">UI/UX Design</div>
+                                                <div class="desc text-secondary">User-centered design solutions
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <h3 class="mb-4">INFRASTRUCTURE & AI</h3>
+                                        <div class="cloud-solutions d-flex gap-2 mb-2">
+                                            <div class="cloud d-flex justify-content-center align-items-center">
+                                                <i class="fa-solid fa-cloud" id="cloud-icon"></i>
+                                            </div>
+                                            <div id="cloud-solution">
+                                                <div class="fw-bold">Cloud Solutions</div>
+                                                <div class="desc text-secondary">Scalable cloud infrastructure</div>
+                                            </div>
+                                        </div>
+                                        <div class="ai-machine-learning d-flex gap-2 mb-2">
+                                            <div class="brain d-flex justify-content-center align-items-center">
+                                                <i class="fa-solid fa-brain" id="brain-icon"></i>
+                                            </div>
+                                            <div id="machine-learning">
+                                                <div class="fw-bold">AI & Machine Learning</div>
+                                                <div class="desc text-secondary">Intelligent automation solutions
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="database-solutions d-flex gap-2 mb-2">
+                                            <div class="database d-flex justify-content-center align-items-center">
+                                                <i class="fa-solid fa-database" id="database-icon"></i>
+                                            </div>
+                                            <div id="database-solution">
+                                                <div class="fw-bold">Data Solutions</div>
+                                                <div class="desc text-secondary">Database & analytics platforms
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <h3 class="mb-4">MARKETING</h3>
+                                        <div class="digital-marketing d-flex gap-2 mb-2">
+                                            <div class="marketing d-flex justify-content-center align-items-center">
+                                                <i class="fa-solid fa-chart-line" id="chart-line-icon"></i>
+                                            </div>
+                                            <div id="digital-marketing">
+                                                <div class="fw-bold">Digital Marketing</div>
+                                                <div class="desc text-secondary">SEO, SEM & social media</div>
+                                            </div>
+                                        </div>
+                                        <div class="content-strategy d-flex gap-2 mb-2">
+                                            <div class="bullhorn d-flex justify-content-center align-items-center">
+                                                <i class="fa-solid fa-bullhorn" id="bullhorn-icon"></i>
+                                            </div>
+                                            <div id="content-strategy">
+                                                <div class="fw-bold">Content Strategy</div>
+                                                <div class="desc text-secondary">Engaging content creation</div>
+                                            </div>
+                                        </div>
+                                        <div class="help w-100 p-3 mt-4">
+                                            <h4 class="mb-2 fw-bold fs-6">Need help choosing?</h4>
+                                            <p class="text-secondary fw-medium">Talk to our experts to find the
+                                                perfect
+                                                solution for your business.</p>
+                                            <a href="#" class="fw-medium">Contact us <i
+                                                    class="fa-solid fa-arrow-right ms-1 fa-sm"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#technology">Technology</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav d-flex align-items-center gap-3">
+                        <li class="nav-item me-3">
+                            <button class="nav-btn border-0 bg-transparent">Sign In</button>
+                        </li>
+                        <li class="nav-item me-3">
+                            <button
+                                class="btn rounded-pill text-white d-flex align-items-center justify-content-center">Get
+                                Started</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+            data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2 overflow-hidden"
+            tabindex="0">
+
+            <!-- Start Home Section -->
+            <section id="home" class="min-vh-100 min-vw-100">
+                <div class="container mx-auto">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-6">
+                            <div class="transforming rounded-pill mb-4 py-2 px-3">
+                                <i class="fa-solid fa-rocket me-2"></i>
+                                Transforming Digital Experiences
+                            </div>
+                            <h1 class="mb-4">
+                                <span class="d-block" id="span1">Digital Solutions</span>
+                                <span class="d-block" id="span2">That Drive</span>
+                                <span class="d-block" id="span3">Growth</span>
+                            </h1>
+                            <p class="fs-5 fw-medium mb-4">
+                                We craft innovative digital experiences that transform businesses and accelerate growth.
+                                From
+                                cutting-edge web applications to mobile solutions, we deliver technology that makes a
+                                difference.
+                            </p>
+                            <div class="d-flex gap-3">
+                                <button class="btn-start rounded-pill py-3 border-0 text-white">
+                                    Start Your Project
+                                    <i class="fa-solid fa-arrow-right ms-2"></i></button>
+                                <button class="btn-watch rounded-pill bg-transparent">
+                                    <i class="fa-solid fa-play"></i>
+                                    Watch Demo
+                                </button>
+                            </div>
+                            <div class="key-metrics">
+                                <div class="projects-delivered">
+                                    <h3 class="fw-bold text-center mb-0">500+</h3>
+                                    <p>Projects Delivered</p>
+                                </div>
+                                <div class="client-satisfaction">
+                                    <h3 class="fw-bold text-center mb-0">98%</h3>
+                                    <p>Client Satisfaction</p>
+                                </div>
+                                <div class="support">
+                                    <h3 class="fw-bold text-center mb-0">24/7</h3>
+                                    <p>Support</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" style="padding-left: 120px;">
+                            <div class="parent-holder shadow-lg">
+                                <div id="bg-before"></div>
+                                <div class="img-holder bg-white">
+                                    <div class="code d-flex align-items-center justify-content-center fw-medium">
+                                        <i class="fa-solid fa-code text-white" id="code-icon"></i>
+                                    </div>
+                                    <img src="./images/hero-img.png" alt="hero image" class="w-100 h-100">
+                                    <div class="mobile d-flex align-items-center justify-content-center fw-medium">
+                                        <i class="fa-solid fa-mobile text-white" id="mobile-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Home Section -->
+
+            <!-- Start Technology Section -->
+            <section id="technology" class="min-vh-100 min-vw-100">
+                <div class="container mx-auto d-flex flex-column align-items-center">
+                    <div class="tech-stack rounded-pill py-2 px-3 mb-4">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Technology Stack</span>
+                    </div>
+                    <h2 class="mb-4">
+                        <span id="span1">Cutting-Edge</span>
+                        <span id="span2">Technologies</span>
+                    </h2>
+                    <p class="fs-5 text-center">We leverage the latest technologies and frameworks to build scalable,
+                        secure, and high-performance solutions.</p>
+
+                    <ul class="nav nav-tabs mb-5 mx-auto" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active d-flex align-items-center gap-2" id="frontend-tab"
+                                data-bs-toggle="tab" data-bs-target="#frontend-tab-pane" type="button" role="tab"
+                                aria-controls="frontend-tab-pane" aria-selected="true">
+                                <i class="fa-solid fa-code me-1"></i>
+                                Frontend
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="backend-tab" data-bs-toggle="tab"
+                                data-bs-target="#backend-tab-pane" type="button" role="tab"
+                                aria-controls="backend-tab-pane" aria-selected="false">
+                                <i class="fa-solid fa-server"></i>
+                                Backend
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="mobile-tab" data-bs-toggle="tab"
+                                data-bs-target="#mobile-tab-pane" type="button" role="tab"
+                                aria-controls="mobile-tab-pane" aria-selected="false">
+                                <i class="fa-solid fa-mobile"></i>
+                                Mobile
+                            </button>
+                        </li>
+                        <li class="nav-item text-center" role="presentation">
+                            <button class="nav-link" id="cloud-tab" data-bs-toggle="tab"
+                                data-bs-target="#cloud-tab-pane" type="button" role="tab" aria-controls="cloud-tab-pane"
+                                aria-selected="false">
+                                <i class="fa-solid fa-cloud"></i>
+                                Cloud & DevOps
+                            </button>
+                        </li>
+                        <li class="nav-item text-center" role="presentation">
+                            <button class="nav-link" id="database-tab" data-bs-toggle="tab"
+                                data-bs-target="#database-tab-pane" type="button" role="tab"
+                                aria-controls="database-tab-pane" aria-selected="false">
+                                <i class="fa-solid fa-database"></i>
+                                Database
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active fadeInUp" id="frontend-tab-pane" role="tabpanel"
+                            aria-labelledby="frontend-tab" tabindex="0">
+                            <div class="frontend-tech w-100 d-flex flex-column align-items-center">
+                                <h3 class="mb-3 text-center fw-bold fs-4">Frontend Technologies</h3>
+                                <p class="fs-5 text-center text-secondary mb-5">Modern frameworks and libraries for
+                                    creating
+                                    exceptional user interfaces</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="react-card">
+                                        <div
+                                            class="react-icon bg-primary mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-react text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">React.js</h4>
+                                        <p class="text-secondary mb-3">
+                                            Component-based library for building interactive user interfaces with
+                                            virtual DOM
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">JSX</span>
+                                            <span class="py-1 rounded-pill">Hooks</span>
+                                            <span class="py-1 rounded-pill">Redux</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="nextjs-card">
+                                        <div
+                                            class="nextjs-icon bg-black mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold fs-6">Next</span>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Next.js</h4>
+                                        <p class="text-secondary mb-3">
+                                            Full-stack React framework with server-side rendering and static
+                                            generation
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">SSR</span>
+                                            <span class="py-1 rounded-pill">SSG</span>
+                                            <span class="py-1 rounded-pill">API Routes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="vue-card">
+                                        <div
+                                            class="vue-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-vuejs text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Vue.js</h4>
+                                        <p class="text-secondary mb-3">
+                                            Progressive framework for building user interfaces with excellent
+                                            developer experience
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Composition API</span>
+                                            <span class="py-1 rounded-pill">Vuex</span>
+                                            <span class="py-1 rounded-pill">Nuxt</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="angular-card">
+                                        <div
+                                            class="angular-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-angular text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Angular.js</h4>
+                                        <p class="text-secondary mb-3">
+                                            Comprehensive platform for building scalable web applications
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">TypeScript</span>
+                                            <span class="py-1 rounded-pill">RxJS</span>
+                                            <span class="py-1 rounded-pill">CLI</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="tailwind-card">
+                                        <div
+                                            class="tailwind-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-css3-alt text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Tailwind CSS</h4>
+                                        <p class="text-secondary mb-3">
+                                            Utility-first CSS framework for rapid UI development
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">JIT</span>
+                                            <span class="py-1 rounded-pill">Components</span>
+                                            <span class="py-1 rounded-pill">Responsive</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="vite-card">
+                                        <div
+                                            class="bolt-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-bolt text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Vite</h4>
+                                        <p class="text-secondary mb-3">
+                                            Next generation frontend tooling with lightning fast builds
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">HMR</span>
+                                            <span class="py-1 rounded-pill">ESM</span>
+                                            <span class="py-1 rounded-pill">Rollup</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade fadeInUp overflow-hidden" id="backend-tab-pane" role="tabpanel"
+                            aria-labelledby="backend-tab" tabindex="0">
+                            <div class="backend-tech w-100 d-flex flex-column align-items-center">
+                                <h3 class="mb-3 text-center fw-bold fs-4">Backend Technologies</h3>
+                                <p class="fs-5 text-center text-secondary mb-5">Robust server-side technologies for
+                                    scalable and secure applications</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="nodejs-card">
+                                        <div
+                                            class="nodejs-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-node-js text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Node.js</h4>
+                                        <p class="text-secondary mb-3">
+                                            JavaScript runtime built on Chrome's V8 engine for server-side development
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Express.js</span>
+                                            <span class="py-1 rounded-pill">NPM</span>
+                                            <span class="py-1 rounded-pill">TypeScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="python-card">
+                                        <div
+                                            class="python-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-python text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Python</h4>
+                                        <p class="text-secondary mb-3">
+                                            Versatile programming language with powerful frameworks for web development
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Django</span>
+                                            <span class="py-1 rounded-pill">FastAPI</span>
+                                            <span class="py-1 rounded-pill">Flask</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="golang-card">
+                                        <div
+                                            class="golang-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold fs-6">Go</span>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Golang</h4>
+                                        <p class="text-secondary mb-3">
+                                            Fast, statically typed language designed for modern software development
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Gin</span>
+                                            <span class="py-1 rounded-pill">Goroutines</span>
+                                            <span class="py-1 rounded-pill">Microservices</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="java-card">
+                                        <div
+                                            class="java-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-java text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Java</h4>
+                                        <p class="text-secondary mb-3">
+                                            Enterprise-grade platform with robust frameworks for large-scale
+                                            applications
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Spring Boot</span>
+                                            <span class="py-1 rounded-pill">Hibernate</span>
+                                            <span class="py-1 rounded-pill">Maven</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="netcore-card">
+                                        <div
+                                            class="netcore-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold fs-6">.NET</span>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">.NET Core</h4>
+                                        <p class="text-secondary mb-3">
+                                            Cross-platform framework for building modern, cloud-based applications
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">C#</span>
+                                            <span class="py-1 rounded-pill">Entity Framework</span>
+                                            <span class="py-1 rounded-pill">Azure</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="ruby-card">
+                                        <div
+                                            class="gem-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-gem text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Vite</h4>
+                                        <p class="text-secondary mb-3">
+                                            Dynamic language focused on simplicity and productivity
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Rails</span>
+                                            <span class="py-1 rounded-pill">Sinatra</span>
+                                            <span class="py-1 rounded-pill">RubyGems</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade fadeInUp overflow-hidden" id="mobile-tab-pane" role="tabpanel"
+                            aria-labelledby="mobile-tab" tabindex="0">
+                            <div class="mobile-tech w-100 d-flex flex-column align-items-center">
+                                <h3 class="mb-3 text-center fw-bold fs-4">Mobile Technologies</h3>
+                                <p class="fs-5 text-center text-secondary mb-5">Native and cross-platform solutions for
+                                    iOS and Android development</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="react-card">
+                                        <div
+                                            class="react-icon bg-primary mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-react text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">React Native</h4>
+                                        <p class="text-secondary mb-3">
+                                            Cross-platform mobile development using React and JavaScript
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Expo</span>
+                                            <span class="py-1 rounded-pill">Navigation</span>
+                                            <span class="py-1 rounded-pill">Redux</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="flutter-card">
+                                        <div
+                                            class="mobile-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-mobile text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Flutter</h4>
+                                        <p class="text-secondary mb-3">
+                                            Google's UI toolkit for building natively compiled applications
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Dart</span>
+                                            <span class="py-1 rounded-pill">Widgets</span>
+                                            <span class="py-1 rounded-pill">Material</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="apple-card">
+                                        <div
+                                            class="apple-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-apple text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">iOS Native</h4>
+                                        <p class="text-secondary mb-3">
+                                            Native iOS development using Swift and Xcode
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Swift</span>
+                                            <span class="py-1 rounded-pill">SwiftUI</span>
+                                            <span class="py-1 rounded-pill">Core Data</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="android-card">
+                                        <div
+                                            class="android-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-android text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Android Native</h4>
+                                        <p class="text-secondary mb-3">
+                                            Native Android development using Kotlin and Android Studio
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Kotlin</span>
+                                            <span class="py-1 rounded-pill">Jetpack</span>
+                                            <span class="py-1 rounded-pill">Room</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="xamarin-card">
+                                        <div
+                                            class="xamarin-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-code text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Xamarin</h4>
+                                        <p class="text-secondary mb-3">
+                                            Microsoft's cross-platform solution using C# and .NET
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">C#</span>
+                                            <span class="py-1 rounded-pill">Forms</span>
+                                            <span class="py-1 rounded-pill">MVVM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="pwa-card">
+                                        <div
+                                            class="globe-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-globe text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">PWA</h4>
+                                        <p class="text-secondary mb-3">
+                                            Progressive Web Apps with native-like mobile experiences
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Service Worker</span>
+                                            <span class="py-1 rounded-pill">Manifest</span>
+                                            <span class="py-1 rounded-pill">Offline</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade fadeInUp" id="cloud-tab-pane" role="tabpanel"
+                            aria-labelledby="cloud-tab" tabindex="0">
+                            <div class="cloud_devops-tech w-100 d-flex flex-column align-items-center">
+                                <h3 class="mb-3 text-center fw-bold fs-4">Cloud & DevOps</h3>
+                                <p class="fs-5 text-center text-secondary mb-5">Modern cloud infrastructure and
+                                    deployment technologies</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="amazon-card">
+                                        <div
+                                            class="amazon-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-aws text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Amazon AWS</h4>
+                                        <p class="text-secondary mb-3">
+                                            Comprehensive cloud computing platform with extensive services
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">EC2</span>
+                                            <span class="py-1 rounded-pill">Lambda</span>
+                                            <span class="py-1 rounded-pill">S3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="microsoft-card">
+                                        <div
+                                            class="microsoft-icon bg-primary mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-microsoft text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Microsoft Azure</h4>
+                                        <p class="text-secondary mb-3">
+                                            Enterprise cloud platform with integrated development tools
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">App Service</span>
+                                            <span class="py-1 rounded-pill">Functions</span>
+                                            <span class="py-1 rounded-pill">DevOps</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="google-card">
+                                        <div
+                                            class="google-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-google text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Google Cloud</h4>
+                                        <p class="text-secondary mb-3">
+                                            Google's cloud computing platform with AI and ML capabilities
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Compute Engine</span>
+                                            <span class="py-1 rounded-pill">Cloud Run</span>
+                                            <span class="py-1 rounded-pill">BigQuery</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="docker-card">
+                                        <div
+                                            class="docker-icon bg-primary mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-docker text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Docker</h4>
+                                        <p class="text-secondary mb-3">
+                                            Containerization platform for consistent application deployment
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Containers</span>
+                                            <span class="py-1 rounded-pill">Images</span>
+                                            <span class="py-1 rounded-pill">Compose</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="kubernetes-card">
+                                        <div
+                                            class="kubernetes-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold fs-6">K8s</span>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Kubernetes</h4>
+                                        <p class="text-secondary mb-3">
+                                            Container orchestration system for automating deployment and scaling
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Pods</span>
+                                            <span class="py-1 rounded-pill">Services</span>
+                                            <span class="py-1 rounded-pill">Helm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="pipeline-card">
+                                        <div
+                                            class="jenkins-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-brands fa-jenkins text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">CI/CD Pipeline</h4>
+                                        <p class="text-secondary mb-3">
+                                            Automated build, test, and deployment workflows
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Jenkins</span>
+                                            <span class="py-1 rounded-pill">GitHub Actions</span>
+                                            <span class="py-1 rounded-pill">GitLab CI</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade fadeInUp" id="database-tab-pane" role="tabpanel"
+                            aria-labelledby="database-tab" tabindex="0">
+                            <div class="database-tech w-100 d-flex flex-column align-items-center">
+                                <h3 class="mb-3 text-center fw-bold fs-4">Database Technologies</h3>
+                                <p class="fs-5 text-center text-secondary mb-5">Robust data storage solutions for modern
+                                    applications</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="postgresql-card">
+                                        <div
+                                            class="postgresql-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-database text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">PostgreSQL</h4>
+                                        <p class="text-secondary mb-3">
+                                            Advanced open-source relational database with JSON support
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">ACID</span>
+                                            <span class="py-1 rounded-pill">JSON</span>
+                                            <span class="py-1 rounded-pill">Extensions</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="mongodb-card">
+                                        <div
+                                            class="mongodb-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <span class="text-white fw-bold">Mongo</span>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">MongoDB</h4>
+                                        <p class="text-secondary mb-3">
+                                            Flexible NoSQL document database for modern applications
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Documents</span>
+                                            <span class="py-1 rounded-pill">Aggregation</span>
+                                            <span class="py-1 rounded-pill">Sharding</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="redis-card">
+                                        <div
+                                            class="fire-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-fire text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Redis</h4>
+                                        <p class="text-secondary mb-3">
+                                            In-memory data structure store for caching and real-time applications
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Cache</span>
+                                            <span class="py-1 rounded-pill">Pub/Sub</span>
+                                            <span class="py-1 rounded-pill">Streams</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="mysql-card">
+                                        <div
+                                            class="mysql-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-database text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">MySQL</h4>
+                                        <p class="text-secondary mb-3">
+                                            Popular open-source relational database management system
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">InnoDB</span>
+                                            <span class="py-1 rounded-pill">Replication</span>
+                                            <span class="py-1 rounded-pill">Clustering</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="elasticsearch-card">
+                                        <div
+                                            class="chart-line-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-chart-line text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">Elasticsearch</h4>
+                                        <p class="text-secondary mb-3">
+                                            Distributed search and analytics engine for complex queries
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Search</span>
+                                            <span class="py-1 rounded-pill">Analytics</span>
+                                            <span class="py-1 rounded-pill">Kibana</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="graphsql-card">
+                                        <div
+                                            class="diagram-project-icon mb-4 fs-4 d-flex align-items-center justify-content-center">
+                                            <i class="fa-solid fa-diagram-project text-white"></i>
+                                        </div>
+                                        <h4 class="fs-5 fw-bold">GraphQL</h4>
+                                        <p class="text-secondary mb-3">
+                                            Query language and runtime for APIs with flexible data fetching
+                                        </p>
+                                        <div class="tech-tags">
+                                            <span class="py-1 rounded-pill">Schema</span>
+                                            <span class="py-1 rounded-pill">Resolvers</span>
+                                            <span class="py-1 rounded-pill">Apollo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Technology Section -->
+
+            <!-- Start Testimonials Section -->
+            <section id="testimonials" class="min-vh-100 min-vw-100">
+                <div class="container mx-auto d-flex flex-column justify-content-center align-items-center">
+                    <div class="clients-testimonials rounded-pill py-2 px-3 mb-4">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Client Testimonials</span>
+                    </div>
+                    <h2 class="mb-4">
+                        <span id="span1">What Our</span>
+                        <span id="span2">Clients Say</span>
+                    </h2>
+                    <p class="fs-5 text-center">Don't just take our word for it. Here's what our clients have to say
+                        about working with us.</p>
+
+                    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-inner">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <!-- Testimonial 1 -->
+                                    <div class="carousel-item active p-5">
+                                        <div class="rating_verified w-100 d-flex justify-content-between">
+                                            <div class="rating_quotes d-flex gap-3 align-items-center">
+                                                <div
+                                                    class="quotes-left d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-quote-left fa-xl" id="quotes-left"></i>
+                                                </div>
+                                                <div class="rating d-flex flex-column gap-1">
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                    </div>
+                                                    <span class="text-secondary">5.0 Rating</span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="verified rounded-pill d-flex align-items-center justify-content-center">
+                                                <i class="fa-solid fa-circle-check me-2"></i>
+                                                <span>Verified</span>
+                                            </div>
+                                        </div>
+                                        <p class="fs-5">
+                                            "Clarity transformed our entire digital presence. Their team's
+                                            expertise and
+                                            dedication resulted in a 300% increase in our online sales. Absolutely
+                                            phenomenal work!"</p>
+                                        <div class="divider mx-auto"></div>
+                                        <div class="client d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="avatar position-relative">
+                                                    <img src="./images/avatar-1.jpg" alt="">
+                                                    <div
+                                                        class="check rounded-circle d-flex align-items-center justify-content-center border-2 border-white">
+                                                        <i class="fa-solid fa-check text-white" id="check-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="client-data d-flex flex-column gap-1">
+                                                    <div class="client-name fw-bold">Ahmed Ali-Farsi</div>
+                                                    <div class="client-job text-secondary">CEO, RetailMax</div>
+                                                    <div class="client-verified">
+                                                        <i class="fa-brands fa-linkedin fa-sm" id="linkedin-icon"></i>
+                                                        <span class="text-secondary">Verified on Linkedin</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="growth d-flex flex-column">
+                                                <div class="fw-bold">300%</div>
+                                                <span class="text-end text-secondary">Growth</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Testimonial 2 -->
+                                    <div class="carousel-item p-5">
+                                        <div class="rating_verified w-100 d-flex justify-content-between">
+                                            <div class="rating_quotes d-flex gap-3 align-items-center">
+                                                <div
+                                                    class="quotes-left d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-quote-left fa-xl" id="quotes-left"></i>
+                                                </div>
+                                                <div class="rating d-flex flex-column gap-1">
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                    </div>
+                                                    <span class="text-secondary">5.0 Rating</span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="verified rounded-pill d-flex align-items-center justify-content-center">
+                                                <i class="fa-solid fa-circle-check me-2"></i>
+                                                <span>Verified</span>
+                                            </div>
+                                        </div>
+                                        <p class="fs-5">
+                                            "The telemedicine platform they built for us has revolutionized how we serve
+                                            our patients. The security, reliability, and user experience are all
+                                            top-notch."</p>
+                                        <div class="divider mx-auto"></div>
+                                        <div class="client d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="avatar position-relative">
+                                                    <img src="./images/avatar-2.jpg" alt="">
+                                                    <div
+                                                        class="check rounded-circle d-flex align-items-center justify-content-center border-2 border-white">
+                                                        <i class="fa-solid fa-check text-white" id="check-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="client-data d-flex flex-column gap-1">
+                                                    <div class="client-name fw-bold">Dr. Michael Chen</div>
+                                                    <div class="client-job text-secondary">Director, MedCare</div>
+                                                    <div class="client-verified">
+                                                        <i class="fa-brands fa-linkedin fa-sm" id="linkedin-icon"></i>
+                                                        <span class="text-secondary">Verified on Linkedin</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="patients d-flex flex-column">
+                                                <div class="fw-bold text-start">100K</div>
+                                                <span class="text-end text-secondary">Patients</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Testimonial 3 -->
+                                    <div class="carousel-item p-5">
+                                        <div class="rating_verified w-100 d-flex justify-content-between">
+                                            <div class="rating_quotes d-flex gap-3 align-items-center">
+                                                <div
+                                                    class="quotes-left d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-quote-left fa-xl" id="quotes-left"></i>
+                                                </div>
+                                                <div class="rating d-flex flex-column gap-1">
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                    </div>
+                                                    <span class="text-secondary">5.0 Rating</span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="verified rounded-pill d-flex align-items-center justify-content-center">
+                                                <i class="fa-solid fa-circle-check me-2"></i>
+                                                <span>Verified</span>
+                                            </div>
+                                        </div>
+                                        <p class="fs-5">
+                                            "Working with Clarity was a game-changer. Their mobile banking app exceeded
+                                            all our expectations and has processed over $1 billion in transactions."</p>
+                                        <div class="divider mx-auto"></div>
+                                        <div class="client d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="avatar position-relative">
+                                                    <img src="./images/avatar-3.jpg" alt="">
+                                                    <div
+                                                        class="check rounded-circle d-flex align-items-center justify-content-center border-2 border-white">
+                                                        <i class="fa-solid fa-check text-white" id="check-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="client-data d-flex flex-column gap-1">
+                                                    <div class="client-name fw-bold">Eslam Salah</div>
+                                                    <div class="client-job text-secondary">CTO, FinanceFlow</div>
+                                                    <div class="client-verified">
+                                                        <i class="fa-brands fa-linkedin fa-sm" id="linkedin-icon"></i>
+                                                        <span class="text-secondary">Verified on Linkedin</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="processed d-flex flex-column">
+                                                <div class="fw-bold text-start">$1B+</div>
+                                                <span class="text-end text-secondary">Processed</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Testimonial 4 -->
+                                    <div class="carousel-item p-5">
+                                        <div class="rating_verified w-100 d-flex justify-content-between">
+                                            <div class="rating_quotes d-flex gap-3 align-items-center">
+                                                <div
+                                                    class="quotes-left d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-quote-left fa-xl" id="quotes-left"></i>
+                                                </div>
+                                                <div class="rating d-flex flex-column gap-1">
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                    </div>
+                                                    <span class="text-secondary">5.0 Rating</span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="verified rounded-pill d-flex align-items-center justify-content-center">
+                                                <i class="fa-solid fa-circle-check me-2"></i>
+                                                <span>Verified</span>
+                                            </div>
+                                        </div>
+                                        <p class="fs-5">
+                                            "The AI-powered analytics dashboard they created has given us insights we
+                                            never had before. Our decision-making process has become so much more
+                                            data-driven and effective."</p>
+                                        <div class="divider mx-auto"></div>
+                                        <div class="client d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="avatar position-relative">
+                                                    <img src="./images/avatar-4.jpg" alt="">
+                                                    <div
+                                                        class="check rounded-circle d-flex align-items-center justify-content-center border-2 border-white">
+                                                        <i class="fa-solid fa-check text-white" id="check-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="client-data d-flex flex-column gap-1">
+                                                    <div class="client-name fw-bold">James Wilson</div>
+                                                    <div class="client-job text-secondary">VP of Operations, TechCorp
+                                                    </div>
+                                                    <div class="client-verified">
+                                                        <i class="fa-brands fa-linkedin fa-sm" id="linkedin-icon"></i>
+                                                        <span class="text-secondary">Verified on Linkedin</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="insights d-flex flex-column">
+                                                <div class="fw-bold text-start">10X</div>
+                                                <span class="text-end text-secondary">Insights</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Testimonial 5 -->
+                                    <div class="carousel-item p-5">
+                                        <div class="rating_verified w-100 d-flex justify-content-between">
+                                            <div class="rating_quotes d-flex gap-3 align-items-center">
+                                                <div
+                                                    class="quotes-left d-flex align-items-center justify-content-center">
+                                                    <i class="fa-solid fa-quote-left fa-xl" id="quotes-left"></i>
+                                                </div>
+                                                <div class="rating d-flex flex-column gap-1">
+                                                    <div class="stars">
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                        <i class="fa-solid fa-star" id="star"></i>
+                                                    </div>
+                                                    <span class="text-secondary">5.0 Rating</span>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="verified rounded-pill d-flex align-items-center justify-content-center">
+                                                <i class="fa-solid fa-circle-check me-2"></i>
+                                                <span>Verified</span>
+                                            </div>
+                                        </div>
+                                        <p class="fs-5">
+                                            "Their cloud migration service was flawless. Zero downtime, improved
+                                            performance, and significant cost savings. The team's expertise is
+                                            unmatched."</p>
+                                        <div class="divider mx-auto"></div>
+                                        <div class="client d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="avatar position-relative">
+                                                    <img src="./images/avatar-5.jpg" alt="">
+                                                    <div
+                                                        class="check rounded-circle d-flex align-items-center justify-content-center border-2 border-white">
+                                                        <i class="fa-solid fa-check text-white" id="check-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="client-data d-flex flex-column gap-1">
+                                                    <div class="client-name fw-bold">Omar Wael</div>
+                                                    <div class="client-job text-secondary">IT Director, GlobalTech</div>
+                                                    <div class="client-verified">
+                                                        <i class="fa-brands fa-linkedin fa-sm" id="linkedin-icon"></i>
+                                                        <span class="text-secondary">Verified on Linkedin</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="downtime d-flex flex-column">
+                                                <div class="fw-bold text-start">0%</div>
+                                                <span class="text-end text-secondary">Downtime</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Testimonials Section -->
+
+            <!-- Start FAQ Section -->
+            <section id="faq" class="min-vh-100 min-vw-100">
+                <div class="container mx-auto d-flex flex-column justify-content-center align-items-center">
+                    <div class="faq rounded-pill py-2 px-3 mb-4">
+                        <i class="fa-solid fa-circle-question me-1"></i>
+                        <span>FAQ</span>
+                    </div>
+                    <h2 class="mb-4">
+                        <span id="span1">Frequently Asked</span>
+                        <span id="span2">Questions</span>
+                    </h2>
+                    <p class="fs-5 text-center">Find answers to common questions about our services, process, and how we
+                        can help transform your business.</p>
+
+                    <div class="accordion w-75" id="accordionExample">
+                        <div class="accordion-item mb-4">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button bg-white" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="fw-bold">What services does Clarity offer?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body text-secondary" style="max-width: 856px;">
+                                    We offer a comprehensive range of digital services including web development, mobile
+                                    applications, cloud solutions, AI & machine learning, digital marketing, and UI/UX
+                                    design. Our team specializes in creating custom solutions tailored to your specific
+                                    business needs, from initial concept through to deployment and ongoing support.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-4">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="fw-bold">How long does a typical project take?</span>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item’s accordion body.</strong> It is hidden by
+                                    default,
+                                    until the collapse plugin adds the appropriate classes that we use to style
+                                    each
+                                    element. These classes control the overall appearance, as well as the
+                                    showing
+                                    and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or
+                                    overriding
+                                    our default variables. It’s also worth noting that just about any HTML can
+                                    go
+                                    within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-4">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item’s accordion body.</strong> It is hidden by
+                                    default,
+                                    until the collapse plugin adds the appropriate classes that we use to style
+                                    each
+                                    element. These classes control the overall appearance, as well as the
+                                    showing
+                                    and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or
+                                    overriding
+                                    our default variables. It’s also worth noting that just about any HTML can
+                                    go
+                                    within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        <!-- End FAQ Section -->
+    </main>
+    <!-- End Main -->
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

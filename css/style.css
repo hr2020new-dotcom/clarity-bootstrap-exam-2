@@ -1,0 +1,1370 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter_18pt-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter_18pt-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter_18pt-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter_18pt-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter_18pt-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter_18pt-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter_18pt-Black.ttf);
+    font-weight: 900;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --primary-color: #ea580c;
+    --secondary-color: #fde9dd;
+    --main-color: #c2410c;
+    --text-primary: #364153;
+    --text-dark: #7c2d12;
+    --paragraph-color: #4a5565;
+    --accent-color: #fb923c;
+    --primary-background: linear-gradient(to bottom right, var(--primary-color), var(--main-color));
+    --transition: all .2s ease-in-out;
+    --section-padding: 96px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Start Header */
+
+header {
+    height: 5.0625rem;
+    border-bottom: .0625rem solid #f6f3f4;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999999999999999999999999999;
+}
+
+header nav {
+    width: 80%;
+}
+
+header nav .container {
+    padding: 0rem 2rem;
+}
+
+header nav .container .clarity {
+    width: fit-content;
+}
+
+header nav .container .clarity .cube {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--primary-background);
+    margin-right: .75rem;
+    border-radius: .75rem;
+}
+
+header nav .container .clarity span {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    background: var(--primary-background);
+    background-clip: text;
+    color: transparent;
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item .nav-link,
+header nav .container #navbarNav .navbar-nav .nav-item .nav-btn {
+    color: var(--text-primary);
+    font-weight: 500;
+    line-height: 1.5rem;
+    transition: var(--transition);
+    position: relative;
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item .nav-link:hover,
+header nav .container #navbarNav .navbar-nav .nav-item .nav-btn:hover {
+    color: var(--primary-color);
+}
+
+.animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(16px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    0% {
+        transform: translateY(16px);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    0% {
+        -webkit-transform: transform;
+        -webkit-opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        -webkit-opacity: 1;
+    }
+
+    0% {
+        -webkit-transform: translateY(16px);
+        -webkit-opacity: 0;
+    }
+}
+
+.slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu {
+    width: 71.875rem;
+    height: 25.625rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: .0625rem solid #f6f3f4;
+    position: absolute;
+    top: 100%;
+    left: -220%;
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 h3 {
+    font-size: .875rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .web-developments,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .mobile-apps,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .palette-designs,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .cloud-solutions,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .ai-machine-learning,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .database-solutions,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .digital-marketing,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .content-strategy {
+    padding: .75rem;
+    border-radius: .75rem;
+    cursor: pointer;
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .web-developments:hover,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .mobile-apps:hover,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .palette-designs:hover,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .cloud-solutions:hover,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .ai-machine-learning:hover,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .database-solutions:hover,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .digital-marketing:hover,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .content-strategy:hover {
+    background-color: #FFFAF5;
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .web-developments #web-development div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .mobile-apps #mobile-app div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .palette-designs #palette-design div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .cloud-solutions #cloud-solution div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .ai-machine-learning #machine-learning div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .database-solutions #database-solution div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .digital-marketing #digital-marketing div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .content-strategy #content-strategy div {
+    transition: var(--transition);
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .web-developments .code,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .mobile-apps .mobile,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .palette-designs .palette,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .cloud-solutions .cloud,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .ai-machine-learning .brain,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .database-solutions .database,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .digital-marketing .marketing,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .content-strategy .bullhorn {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: .75rem;
+    border-radius: .5rem;
+    background-color: #FBEDE6;
+    transition: var(--transition);
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .web-developments .code #code-icon,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .mobile-apps .mobile #mobile-icon,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .palette-designs .palette #palette-icon,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .cloud-solutions .cloud #cloud-icon,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .ai-machine-learning .brain #brain-icon,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .database-solutions .database #database-icon,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .digital-marketing .marketing #chart-line-icon,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .content-strategy .bullhorn #bullhorn-icon {
+    color: var(--primary-color);
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .web-developments:hover .code,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .mobile-apps:hover .mobile,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .palette-designs:hover .palette,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .cloud-solutions:hover .cloud,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .ai-machine-learning:hover .brain,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .database-solutions:hover .database,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .digital-marketing:hover .marketing,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .content-strategy:hover .bullhorn {
+    transform: scale(110%);
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .web-developments:hover #web-development div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .mobile-apps:hover #mobile-app div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .palette-designs:hover #palette-design div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .cloud-solutions:hover #cloud-solution div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .ai-machine-learning:hover #machine-learning div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .database-solutions:hover #database-solution div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .digital-marketing:hover #digital-marketing div,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .content-strategy:hover #content-strategy div {
+    color: var(--primary-color);
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .web-developments #web-development .desc,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .mobile-apps #mobile-app .desc,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .palette-designs #palette-design .desc,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .cloud-solutions #cloud-solution .desc,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .ai-machine-learning #machine-learning .desc,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .database-solutions #database-solution .desc,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .digital-marketing #digital-marketing .desc,
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .content-strategy #content-strategy .desc {
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .help {
+    border-radius: .75rem;
+    background-color: #FBEDE6;
+    border-radius: .75rem;
+    border: .0625rem solid #ea580c33;
+    height: 8.875rem;
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .help p {
+    font-size: .875rem;
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .help a {
+    color: var(--primary-color);
+    font-size: .875rem;
+    transition: var(--transition);
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item.dropdown .dropdown-menu .row .col-lg-4 .help a:hover {
+    color: var(--main-color);
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item .btn {
+    width: 9.5rem;
+    height: 3rem;
+    padding: .75rem 2rem;
+    font-weight: 500;
+    background: linear-gradient(to right, var(--primary-color), var(--main-color));
+    transition: var(--transition);
+}
+
+header nav .container #navbarNav .navbar-nav .nav-item .btn:hover {
+    box-shadow: 0 .625rem .9375rem -0.1875rem color-mix(in oklab,
+            color-mix(in oklab, #ea580c 25%, transparent) 100%, transparent), 0 .25rem .375rem -0.25rem color-mix(in oklab,
+            color-mix(in oklab, #ea580c 25%, transparent) 100%, transparent);
+}
+
+/* End Header */
+
+/* Start Home Section */
+
+main #home {
+    background: linear-gradient(to bottom right, #fff7ed 0%, #fff 50%, #fff7ed 100%);
+    padding-block: var(--section-padding);
+}
+
+main #home .container {
+    max-width: 96rem;
+    padding: 32px;
+}
+
+main #home .container .row .col-lg-6 {
+    padding-right: 4rem;
+}
+
+main #home .container .row .col-lg-6 .transforming {
+    width: 17.5rem;
+    height: 2.25rem;
+    background-color: #FDE9DC;
+    font-size: .875rem;
+    color: var(--primary-color);
+}
+
+main #home .container .row .col-lg-6 h1 {
+    font-size: 3.75rem;
+    max-width: 51.1875rem;
+    font-weight: 900;
+    line-height: 4.6875rem;
+}
+
+main #home .container .row .col-lg-6 h1 #span1 {
+    background: linear-gradient(to right, var(--text-dark), var(--primary-color), var(--main-color));
+    background-clip: text;
+    color: transparent;
+}
+
+main #home .container .row .col-lg-6 h1 #span2 {
+    background-color: var(--text-dark);
+    background-clip: text;
+    color: transparent;
+}
+
+main #home .container .row .col-lg-6 h1 #span3 {
+    background: linear-gradient(to right, var(--accent-color), var(--primary-color));
+    background-clip: text;
+    color: transparent;
+}
+
+main #home .container .row .col-lg-6 p {
+    max-width: 42rem;
+    color: var(--paragraph-color);
+}
+
+main #home .container .row .col-lg-6 div {
+    margin-bottom: 2rem;
+}
+
+main #home .container .row .col-lg-6 div .btn-start {
+    width: 16.75rem;
+    height: 4rem;
+    padding-inline: 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background: linear-gradient(to right, var(--primary-color), var(--main-color));
+    transition: var(--transition);
+}
+
+main #home .container .row .col-lg-6 div .btn-start:hover {
+    box-shadow: 0 1.25rem 1.5625rem -0.3125rem color-mix(in oklab,
+            color-mix(in oklab, #ea580c 25%, transparent) 100%, transparent), 0 .5rem .625rem -0.375rem color-mix(in oklab,
+            color-mix(in oklab, #ea580c 25%, transparent) 100%, transparent);
+    transform: translateY(-0.25rem);
+}
+
+main #home .container .row .col-lg-6 div .btn-watch {
+    width: 14.3125rem;
+    height: 4rem;
+    padding-inline: 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: var(--transition);
+    color: var(--text-primary);
+    border: .125rem solid #d1d5dc;
+    transition: var(--transition);
+}
+
+main #home .container .row .col-lg-6 div .btn-watch:hover {
+    border: .125rem solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+main #home .container .row .col-lg-6 .key-metrics {
+    display: flex;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+main #home .container .row .col-lg-6 .key-metrics .projects-delivered,
+main #home .container .row .col-lg-6 .key-metrics .client-satisfaction,
+main #home .container .row .col-lg-6 .key-metrics .support {
+    width: fit-content;
+}
+
+main #home .container .row .col-lg-6 .key-metrics .projects-delivered h3,
+main #home .container .row .col-lg-6 .key-metrics .client-satisfaction h3,
+main #home .container .row .col-lg-6 .key-metrics .support h3 {
+    color: var(--primary-color);
+}
+
+main #home .container .row .col-lg-6 .key-metrics .projects-delivered p,
+main #home .container .row .col-lg-6 .key-metrics .client-satisfaction p,
+main #home .container .row .col-lg-6 .key-metrics .support p {
+    color: var(--text-primary);
+}
+
+main #home .container .row .col-lg-6 .parent-holder {
+    position: relative;
+    border-radius: 1.5rem;
+    width: fit-content;
+}
+
+main #home .container .row .col-lg-6 .parent-holder #bg-before {
+    position: absolute;
+    inset: 0;
+    background: color-mix(in oklab, #ea580c 20%, transparent);
+    width: 36.75rem;
+    height: 36.75rem;
+    border-radius: 1.5rem;
+    transform: rotate(3deg);
+}
+
+main #home .container .row .col-lg-6 .parent-holder .img-holder {
+    width: 36.75rem;
+    height: 36.75rem;
+    padding: 2rem;
+    position: relative;
+    transform: scale(100%);
+    border-radius: 1.5rem;
+}
+
+main #home .container .row .col-lg-6 .parent-holder .img-holder,
+main #home .container .row .col-lg-6 .parent-holder .img-holder img {
+    border-radius: 1.5rem;
+}
+
+main #home .container .row .col-lg-6 .parent-holder .img-holder .code {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom right, var(--accent-color), var(--primary-color));
+    box-shadow: 0 1.25rem 1.5625rem -0.3125rem #0000001a, 0 .5rem .625rem -0.375rem #0000001a;
+    position: absolute;
+    right: -1.5rem;
+    top: -1.5rem;
+}
+
+main #home .container .row .col-lg-6 .parent-holder .img-holder .mobile {
+    width: 5rem;
+    height: 5rem;
+    border-radius: .75rem;
+    background: linear-gradient(to bottom right, var(--main-color), var(--primary-color));
+    box-shadow: 0 1.25rem 1.5625rem -0.3125rem #0000001a, 0 .5rem .625rem -0.375rem #0000001a;
+    position: absolute;
+    left: -1.5rem;
+    bottom: -3.5rem;
+}
+
+main #home .container .row .col-lg-6 .parent-holder .img-holder .code #code-icon,
+main #home .container .row .col-lg-6 .parent-holder .img-holder .mobile #mobile-icon {
+    font-size: 1.5rem;
+}
+
+/* End Home Section */
+
+/* Start Technology Section */
+
+main #technology {
+    padding-block: var(--section-padding);
+}
+
+main #technology .container {
+    padding: 32px;
+}
+
+main #technology .container .tech-stack {
+    width: fit-content;
+    height: 2.25rem;
+    background-color: color-mix(in oklab, var(--primary-color) 10%, transparent);
+    font-size: .875rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+main #technology .container h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 900;
+}
+
+main #technology .container h2 #span1 {
+    color: var(--text-dark);
+}
+
+main #technology .container h2 #span2 {
+    background: linear-gradient(to right, var(--primary-color), var(--main-color));
+    background-clip: text;
+    color: transparent;
+}
+
+main #technology .container p {
+    color: var(--text-primary);
+    max-width: 47.5rem;
+    margin-bottom: 5rem;
+}
+
+main #technology .container .nav .nav-item button {
+    width: 11.0625rem;
+    height: 3.875rem;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: var(--transition);
+    color: var(--text-primary);
+}
+
+main #technology .container .nav .nav-item button:hover {
+    color: var(--primary-color);
+    border-bottom: .125rem solid var(--primary-color);
+}
+
+main #technology .container .nav .nav-item #cloud-tab {
+    width: 15rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 1.25rem, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.tab-pane.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+
+main #technology .container .tab-content .tab-pane .frontend-tech h3,
+main #technology .container .tab-content .tab-pane .backend-tech h3,
+main #technology .container .tab-content .tab-pane .mobile-tech h3,
+main #technology .container .tab-content .tab-pane .cloud_devops-tech h3,
+main #technology .container .tab-content .tab-pane .database-tech h3 {
+    color: var(--text-dark);
+}
+
+main #technology .container .tab-content .tab-pane .row {
+    width: 72rem;
+    height: 40.9375rem;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .react-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .python-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .microsoft-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .docker-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .postgresql-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .graphsql-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #eff6ff, #dbeafe);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nextjs-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #fbf9fa, #f6f3f4);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .angular-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #fff7ed, #ffedd4);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .tailwind-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .flutter-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #ecfeff, #cefafe);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vite-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #faf5ff, #f3e8ff);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nodejs-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .android-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vue-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mongodb-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #f0fdf4, #dcfce7);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .golang-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .google-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .redis-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #fef2f2, #ffe2e2);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .java-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #faf5ff, #f3e8ff);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .netcore-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #eef2ff, #e0e7ff);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .ruby-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #f0fdfa, #cbfbf1);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .apple-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pipeline-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #fbf9fa, #f6f3f4);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .xamarin-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .kubernetes-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .elasticsearch-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #faf5ff, #f3e8ff);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pwa-card,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .amazon-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #fff7ed, #ffedd4);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mysql-card {
+    width: 22.625rem;
+    height: 19rem;
+    background: linear-gradient(to bottom right, #fefce8, #fef9c2);
+    padding: 2rem;
+    border-radius: .75rem;
+    transition: var(--transition);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .react-card .react-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nextjs-card .nextjs-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .tailwind-card .tailwind-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #00b8db;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vite-card .bolt-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #ad46ff;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .python-card .python-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #155dfc;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .golang-card .golang-icon,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .google-card .google-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #e7000b;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .java-card .java-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #9810fa;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .netcore-card .netcore-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #4f39f6;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .ruby-card .gem-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #009689;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .flutter-card .mobile-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #00b8db;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .apple-card .apple-icon,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pipeline-card .jenkins-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #364153;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .android-card .android-icon,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nodejs-card .nodejs-icon,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vue-card .vue-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #00a63e;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mongodb-card .mongodb-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #008236;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mongodb-card .mongodb-icon span {
+    font-size: .75rem;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .xamarin-card .xamarin-icon,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .kubernetes-card .kubernetes-icon,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .elasticsearch-card .chart-line-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #9810fa;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pwa-card .globe-icon,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .amazon-card .amazon-icon,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .angular-card .angular-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #f54a00;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .microsoft-card .microsoft-icon,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .docker-card .docker-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #2b7fff;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .postgresql-card .postgresql-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #1447e6;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .redis-card .fire-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #c10007;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mysql-card .mysql-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #d08700;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .graphsql-card .diagram-project-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #4f39f6;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .react-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nextjs-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vue-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .angular-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .tailwind-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vite-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nodejs-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .python-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .golang-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .java-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .netcore-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .ruby-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .flutter-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .apple-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .android-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .xamarin-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pwa-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .amazon-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .microsoft-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .google-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .docker-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .kubernetes-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pipeline-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .postgresql-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mongodb-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .redis-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mysql-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .elasticsearch-card h4,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .graphsql-card h4 {
+    color: var(--text-dark);
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .react-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .angular-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .tailwind-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vite-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nodejs-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .python-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .golang-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .java-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .netcore-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .ruby-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .flutter-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .apple-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .android-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .xamarin-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pwa-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .amazon-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .microsoft-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .google-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .docker-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .kubernetes-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pipeline-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .postgresql-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mongodb-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .redis-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mysql-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .elasticsearch-card p,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .graphsql-card p {
+    max-width: 18.625rem;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nextjs-card p {
+    max-width: 18.5625rem;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vue-card p {
+    max-width: 18.4375rem;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .java-card p {
+    max-width: 18.125rem;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .react-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .microsoft-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .docker-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .postgresql-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .graphsql-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .python-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #193cb8;
+    background-color: #dbeafe;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nextjs-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #1e2939;
+    background-color: #f6f3f4;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .angular-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #9f2d00;
+    background-color: #ffedd4;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .tailwind-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #005f78;
+    background-color: #cefafe;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vite-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #6e11b0;
+    background-color: #f3e8ff;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .golang-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .redis-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .google-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #9f0712;
+    background-color: #ffe2e2;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .java-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #6e11b0;
+    background-color: #f3e8ff;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .netcore-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #372aac;
+    background-color: #e0e7ff;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .ruby-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #005f5a;
+    background-color: #cbfbf1;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .flutter-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #005f78;
+    background-color: #cefafe;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .apple-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pipeline-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #1e2939;
+    background-color: #f6f3f4;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nodejs-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vue-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .android-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mongodb-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #016630;
+    background-color: #dcfce7;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .xamarin-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .kubernetes-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .elasticsearch-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #6e11b0;
+    background-color: #f3e8ff;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pwa-card .tech-tags span,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .amazon-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #9f2d00;
+    background-color: #ffedd4;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mysql-card .tech-tags span {
+    width: 2.875rem;
+    height: 1.5rem;
+    padding-inline: .75rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #894b00;
+    background-color: #fef9c2;
+}
+
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .react-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nextjs-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vue-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .angular-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .tailwind-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .vite-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .nodejs-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .python-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .golang-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .java-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .netcore-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .ruby-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .flutter-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .apple-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .android-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .xamarin-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pwa-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .amazon-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .microsoft-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .google-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .docker-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .kubernetes-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .pipeline-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .postgresql-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mongodb-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .redis-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .mysql-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .elasticsearch-card:hover,
+main #technology .container .tab-content .tab-pane .row .col-lg-4 .graphsql-card:hover {
+    box-shadow: 0 1.25rem 1.5625rem -0.3125rem #0000001a, 0 .5rem .625rem -0.375rem #0000001a;
+    transform: translateY(-0.25rem);
+}
+
+/* End Technology Section */
+
+/* Start Testimonials Section */
+
+main #testimonials {
+    padding-block: var(--section-padding);
+    background: linear-gradient(to bottom right, #fbf9fa, #fbf9fa);
+}
+
+main #testimonials .container {
+    padding: 32px;
+}
+
+main #testimonials .container .clients-testimonials {
+    width: fit-content;
+    height: 36px;
+    background: color-mix(in oklab, var(--primary-color) 10%, transparent);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+main #testimonials .container h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 900;
+}
+
+main #testimonials .container h2 #span1 {
+    color: var(--text-dark);
+}
+
+main #testimonials .container h2 #span2 {
+    background: linear-gradient(to right, var(--primary-color), var(--main-color));
+    background-clip: text;
+    color: transparent;
+}
+
+main #testimonials .container p {
+    color: var(--text-primary);
+    max-width: 47.5rem;
+    margin-bottom: 5rem;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item {
+    width: 1008px;
+    height: 404px;
+    border-radius: 24px;
+    background-color: #fff;
+    transition: var(--transition);
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .rating_verified {
+    margin-bottom: 32px;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .rating_verified .rating_quotes .quotes-left {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    background-color: #FBEDE7;
+    transition: var(--transition);
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .rating_verified .rating_quotes .quotes-left #quotes-left {
+    color: var(--primary-color);
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .rating_verified .rating_quotes .stars #star {
+    color: #FDC700;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .rating_verified .rating_quotes .rating span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item:hover .rating_verified .rating_quotes .quotes-left {
+    transform: scale(110%);
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .rating_verified .verified {
+    width: 110px;
+    height: 36px;
+    background: color-mix(in oklab, var(--primary-color) 10%, transparent);
+    color: var(--primary-color);
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .rating_verified .verified span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item p {
+    max-width: 878px;
+    color: var(--text-primary);
+    margin-bottom: 32px;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .divider {
+    background: linear-gradient(to right, transparent, #ebe6e7, transparent);
+    height: 1px;
+    margin-bottom: 32px;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client div,
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .avatar {
+    width: fit-content;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client div .avatar img {
+     width: 80px;
+     height: 80px;
+     border-radius: 50px;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client div .client-data .client-name {
+    color: var(--text-dark);
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client div .client-data .client-job {
+    font-weight: 500;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client div .client-data .client-verified #linkedin-icon {
+    color: var(--primary-color);
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client div .client-data span {
+    font-size: 14px;
+    color: var(--text-primary);
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client div .avatar .check {
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(to bottom right, var(--primary-color), var(--main-color));
+    position: absolute;
+    right: -4px;
+    bottom: -4px;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .growth div,
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .patients div,
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .processed div,
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .insights div,
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .downtime div {
+    background: linear-gradient(to right, var(--primary-color), var(--main-color));
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+}
+
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .growth span,
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .patients span,
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .processed span,
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .insights span,
+main #testimonials .container #carouselExampleRide .carousel-inner #carouselExampleSlidesOnly .carousel-inner .carousel-item .client .downtime span {
+    font-weight: 500;
+}
+
+/* End Testimonials Section */
+
+/* Start FAQ Section */
+
+main #faq {
+    padding-block: var(--section-padding);
+    background: linear-gradient(to bottom right, #fbf9fa, #fbf9fa);
+}
+
+main #faq .container {
+    padding: 32px;
+}
+
+main #faq .container .faq {
+    width: fit-content;
+    height: 36px;
+    background: color-mix(in oklab, var(--primary-color) 10%, transparent);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+main #faq .container h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 900;
+}
+
+main #faq .container h2 #span1 {
+    color: var(--text-dark);
+}
+
+main #faq .container h2 #span2 {
+    background: linear-gradient(to right, var(--primary-color), var(--main-color));
+    background-clip: text;
+    color: transparent;
+}
+
+main #faq .container p {
+    color: var(--text-primary);
+    max-width: 47.5rem;
+    margin-bottom: 5rem;
+}
+
+.main #faq .container .accordion .accordion-item h2 button {
+    border-radius: 20px;
+
+}
+
+.main #faq .container .accordion .accordion-item h2 button:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: #fff;
+}
+
+.main #faq .container .accordion .accordion-item h2 button span {
+    color: var(--text-dark);
+}
+
+/* End FAQ Section */
